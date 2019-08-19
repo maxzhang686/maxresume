@@ -51,12 +51,12 @@ const routing = (
     <div>
       <Route exact={true} path="/" component={About} />
       {/* <Route path="/" component={App} /> */}
-      <Route exact path="/wen" component={Wen} />
+      
 
       <Route exact path="/about" component={About} />
       <Route exact path="/education" component={Education} />
       <Route exact path="/skill" component={Skill} />
-
+      <Route exact path="/wen" component={Wen} />
       <Route path="/ti" component={Ti} />
       <Route path="/wenti" component={Wenti} />
     </div>
