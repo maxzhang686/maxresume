@@ -49,7 +49,7 @@ const routing = (
     </Header>
  
     <div>
-      <Route exact={true} path="/" component={App} />
+      <Route exact={true} path="/" component={About} />
       {/* <Route path="/" component={App} /> */}
       <Route exact path="/wen" component={Wen} />
 
