@@ -38,7 +38,7 @@ export default function Header() {
         background-color: #ffffff!important;
         width: 100%;
         position:fixed;
-        /* z-index: 1030; */
+        z-index: 1030;
         height:56px;
     `;
 
