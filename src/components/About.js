@@ -29,12 +29,13 @@ const About = () =>
           <div class="block-title">
             <h3>About <span>Me</span></h3>
           </div>
-            <p>
+            {/* <p>
             I graduated in 2016 from University of Canberra. I am equipped with essential professional skills to commence my career.
-            </p>
+            </p> */}
             <p>
             I am currently looking for graduate program, junior developer opportunity or a parttime where I can strengthen my skills and begin my career. 
-            During the university study and work, I am proficient using <strong>HTML, CSS, React.jS, GIT</strong> and I am learning <strong>Node.js, Docker, MongoDB</strong>  by myself recently.
+            I am proficient using <strong>HTML, CSS, React.jS, GIT</strong> and learning <strong>Node.js, Docker, MongoDB</strong>  by myself recently.
+            I am equipped with essential professional skills to commence my career
             </p>  
             <p>
             I want to emerge as a successful, true professional through my 'Can Do’ attitude, hard work, confidence personality, high motivation & always willing to work.
@@ -103,6 +104,7 @@ const LocImg = styled.img`
     height: auto;
     border: 0;
     margin: 0 auto;
+    max-height: 200px;
 `;
 
 const Leftbtm = styled.div`

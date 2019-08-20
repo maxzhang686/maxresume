@@ -5,62 +5,42 @@ import { Navbar,Nav } from 'react-bootstrap';
 
 export default function Header() {
     
-  // <li>
-  //             <Link className="navlink" to="/about">About</Link>
-  //             </li>
-  //             <li>
-  //             <Link className="navlink" to="/education">Education</Link>
-  //             </li>
-  //             <li>
-  //             <Link className="navlink"  to="/skill">Skill</Link>
-  //             </li>
     return (
-        <Row> 
-      <Navbar bg="light" variant="light">
+      <Row>
+   
+      <NewNavbar fixed="top" bg="light"  variant="light" expand="lg">
 
-    
-      <Navbar.Brand href="/">Max</Navbar.Brand>
-      <Navbar.Collapse className="justify-content-end">
-      <Nav className="">
-      <NavLink className="navlink" to="/about">AboutMe</NavLink>
-      <NavLink className="navlink" to="/education">Education</NavLink>
-      <NavLink className="navlink"  to="/skill">Skill</NavLink>
-      <NavLink className="navlink"  to="/skill">Weather</NavLink>
-      
-      
-      {/* <Navbar.Brand href="/maxresume">Max</Navbar.Brand>
-      <Navbar.Collapse className="justify-content-end">
-      <Nav className="">
-      <NavLink className="navlink" to="/maxresume/about">AboutMe</NavLink>
-      <NavLink className="navlink" to="/maxresume/education">Education</NavLink>
-      <NavLink className="navlink"  to="/maxresume/skill">Skill</NavLink>
-      <NavLink className="navlink"  to="/maxresume/skill">Weather</NavLink> */}
-      
-        {/* <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#features">Features</Nav.Link>
-        <Nav.Link href="#pricing">Pricing</Nav.Link> */}
-      </Nav>
+     
+      <Navbar.Brand href="/maxresume">Max</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse className="justify-content-end">
+          <Nav className="">
+            <NavLink className="navlink" to="/about">AboutMe</NavLink>
+            <NavLink className="navlink" to="/education">Education</NavLink>
+            <NavLink className="navlink"  to="/skill">Skill</NavLink>
+            <NavLink className="navlink"  to="/weather">WeatherApp</NavLink>
+          </Nav>
       </Navbar.Collapse>
-      
-    </Navbar></Row>
+    </NewNavbar>
+  </Row>
     );
   }
   
 
-  const Row = styled.div`
-  margin:0 auto;
-    justify-content: center ;
+  const NewNavbar = styled(Navbar)`
+    margin:0 auto;
+    
     max-width: 1032px;
-;
+    background-color: #ffffff!important;
+   
 `;
+    const Row = styled.div`
+        background-color: #ffffff!important;
+        width: 100%;
+        position:fixed;
+        /* z-index: 1030; */
+        height:56px;
+    `;
 
-// const Row = styled.div`
-//  color: rgba(0,0,0,.5); 
-//     text-decoration: none;
-//     padding-right: .5rem;
-//     padding-left: .5rem;
-// ;
-// `;
 
 
-  
