@@ -1,5 +1,5 @@
 import React from "react";
-import { Link} from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import styled from 'styled-components';
 import { Navbar,Nav } from 'react-bootstrap';
 
@@ -22,10 +22,10 @@ export default function Header() {
       <Navbar.Brand href="/">Max</Navbar.Brand>
       <Navbar.Collapse className="justify-content-end">
       <Nav className="">
-      <Link className="navlink" to="/maxresume/about">AboutMe</Link>
-      <Link className="navlink" to="/maxresume/education">Education</Link>
-      <Link className="navlink"  to="/maxresume/skill">Skill</Link>
-      <Link className="navlink"  to="/maxresume/skill">Weather</Link>
+      <NavLink className="navlink" to="/maxresume/about">AboutMe</NavLink>
+      <NavLink className="navlink" to="/maxresume/education">Education</NavLink>
+      <NavLink className="navlink"  to="/maxresume/skill">Skill</NavLink>
+      <NavLink className="navlink"  to="/maxresume/skill">Weather</NavLink>
       
         {/* <Nav.Link href="#home">Home</Nav.Link>
         <Nav.Link href="#features">Features</Nav.Link>

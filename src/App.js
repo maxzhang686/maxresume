@@ -46,8 +46,8 @@ function App() {
     <div>
       <Route exact={true} path="/maxresume" component={Home} />
       <Route  path="/maxresume/about" component={About} />
-      <Route path="/maxresume//education" component={Education} />
-      <Route path="/maxresume//skill" component={Skill} />
+      <Route path="/maxresume/education" component={Education} />
+      <Route path="/maxresume/skill" component={Skill} />
       <Route path="/maxresume//wen" component={Wen} />
       <Route path="/maxresume//ti" component={Ti} />
       <Route path="/maxresume//wenti" component={Wenti} />
