@@ -8,7 +8,7 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import { Route, Link, BrowserRouter as Router } from "react-router-dom";
+import { Route, BrowserRouter as Router } from "react-router-dom";
 import Wen from "./components/Wen";
 import Ti from "./components/Ti";
 import Wenti from './components/Wenti';
@@ -49,14 +49,14 @@ const routing = (
     </Header>
  
     <div>
-      <Route exact={true} path="/" component={About} />
+      <Route exact={true} path="/" component={App} />
       {/* <Route path="/" component={App} /> */}
       
 
-      <Route exact path="/about" component={About} />
-      <Route exact path="/education" component={Education} />
-      <Route exact path="/skill" component={Skill} />
-      <Route exact path="/wen" component={Wen} />
+      <Route  path="/about" component={About} />
+      <Route path="/education" component={Education} />
+      <Route path="/skill" component={Skill} />
+      <Route path="/wen" component={Wen} />
       <Route path="/ti" component={Ti} />
       <Route path="/wenti" component={Wenti} />
     </div>
