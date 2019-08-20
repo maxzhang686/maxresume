@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/maxresume/static/css/main.e50bc212.chunk.css",
-    "main.js": "/maxresume/static/js/main.f53b16f6.chunk.js",
-    "main.js.map": "/maxresume/static/js/main.f53b16f6.chunk.js.map",
+    "main.js": "/maxresume/static/js/main.67705621.chunk.js",
+    "main.js.map": "/maxresume/static/js/main.67705621.chunk.js.map",
     "runtime~main.js": "/maxresume/static/js/runtime~main.1a1732fe.js",
     "runtime~main.js.map": "/maxresume/static/js/runtime~main.1a1732fe.js.map",
     "static/js/2.9d7cd617.chunk.js": "/maxresume/static/js/2.9d7cd617.chunk.js",
     "static/js/2.9d7cd617.chunk.js.map": "/maxresume/static/js/2.9d7cd617.chunk.js.map",
     "index.html": "/maxresume/index.html",
-    "precache-manifest.363a9087f39847668aa93655a4a75dee.js": "/maxresume/precache-manifest.363a9087f39847668aa93655a4a75dee.js",
+    "precache-manifest.e1d90d8c688d6c7a9259ad04ea30978e.js": "/maxresume/precache-manifest.e1d90d8c688d6c7a9259ad04ea30978e.js",
     "service-worker.js": "/maxresume/service-worker.js",
     "static/css/main.e50bc212.chunk.css.map": "/maxresume/static/css/main.e50bc212.chunk.css.map"
   }
