@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, BrowserRouter as Router } from "react-router-dom";
+import { HashRouter, Route, BrowserRouter as Router } from "react-router-dom";
 import Wen from "./components/Wen";
 import Ti from "./components/Ti";
 import Wenti from './components/Wenti';
@@ -17,7 +17,7 @@ import styled from 'styled-components';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
     {/* <ul>
       <li>
         <Link to="/">Home</Link>
@@ -44,17 +44,24 @@ function App() {
     </Header>
  
     <div>
-      <Route exact={true} path="/maxresume" component={Home} />
+      {/* <Route exact={true} path="/maxresume" component={Home} />
       <Route  path="/maxresume/about" component={About} />
       <Route path="/maxresume/education" component={Education} />
-      <Route path="/maxresume/skill" component={Skill} />
+      <Route path="/maxresume/skill" component={Skill} /> */}
+
+      <Route exact={true} path="/" component={Home} />
+      <Route  path="/about" component={About} />
+      <Route path="/education" component={Education} />
+      <Route path="/skill" component={Skill} />
+
+
       <Route path="/wen" component={Wen} />
       <Route path="/ti" component={Ti} />
       <Route path="/wenti" component={Wenti} />
     </div>
    
 
-  </Router>
+  </HashRouter>
   );
 }
 
