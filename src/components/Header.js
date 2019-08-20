@@ -25,6 +25,7 @@ export default function Header() {
       <NavLink className="navlink" to="/about">AboutMe</NavLink>
       <NavLink className="navlink" to="/education">Education</NavLink>
       <NavLink className="navlink"  to="/skill">Skill</NavLink>
+      <NavLink className="navlink"  to="/skill">Weather</NavLink>
       
         {/* <Nav.Link href="#home">Home</Nav.Link>
         <Nav.Link href="#features">Features</Nav.Link>
