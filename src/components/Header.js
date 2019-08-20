@@ -19,7 +19,7 @@ export default function Header() {
       <Navbar bg="light" variant="light">
 
       
-      <Navbar.Brand href="#home">Max</Navbar.Brand>
+      <Navbar.Brand href="/">Max</Navbar.Brand>
       <Navbar.Collapse className="justify-content-end">
       <Nav className="">
       <NavLink className="navlink" to="/about">AboutMe</NavLink>
