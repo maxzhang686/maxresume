@@ -9,7 +9,7 @@ class Dashboard extends React.Component{
   constructor(){
     super()
     this.state = {
-      city: 'Sydney',
+      city: 'Canberra',
       isLoading: false
     };
   }
@@ -81,6 +81,7 @@ handleChange = event => {
                       value={this.state.city}
                       onChange={this.handleChange}
                     >
+                      <option value="Canberra">Canberra</option>
                       <option value="Sydney">Sydney</option>
                       <option value="Tokyo">Tokyo</option>
                       <option value="Beijing">Beijing</option>
