@@ -44,13 +44,13 @@ function App() {
     </Header>
  
     <div>
-      <Route exact path="/" component={Home} />
-      <Route  path="/about" component={About} />
-      <Route path="/education" component={Education} />
-      <Route path="/skill" component={Skill} />
-      <Route path="/wen" component={Wen} />
-      <Route path="/ti" component={Ti} />
-      <Route path="/wenti" component={Wenti} />
+      <Route exact={true} path="/maxresume" component={Home} />
+      <Route  path="/maxresume/about" component={About} />
+      <Route path="/maxresume//education" component={Education} />
+      <Route path="/maxresume//skill" component={Skill} />
+      <Route path="/maxresume//wen" component={Wen} />
+      <Route path="/maxresume//ti" component={Ti} />
+      <Route path="/maxresume//wenti" component={Wenti} />
     </div>
    
 
