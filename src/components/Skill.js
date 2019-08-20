@@ -28,12 +28,12 @@ const Skill = () =>
 
           <h4>ReactJS</h4>
           <div class="skill-container">
-            <div class="skill-percentage skill-7"></div>
+            <div class="skill-percentage skill-8"></div>
           </div>
 
           <h4>Git</h4>
           <div class="skill-container">
-            <div class="skill-percentage skill-8"></div>
+            <div class="skill-percentage skill-9"></div>
           </div>
 
           <h4>AWS</h4>

@@ -11,7 +11,7 @@ export default function Header() {
       <NewNavbar fixed="top" bg="light"  variant="light" expand="lg">
 
      
-      <Navbar.Brand href="/maxresume">Max</Navbar.Brand>
+      <Navbar.Brand href="/maxresume"><strong>Max</strong></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-end">
           <Nav className="">
