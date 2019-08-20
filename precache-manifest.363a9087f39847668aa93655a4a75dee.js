@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "47f6047560bbbb0fed1803ebf410904d",
+    "revision": "159447a3d35358ba9bbfc6c0686f8eb1",
     "url": "/maxresume/index.html"
   },
   {
-    "revision": "7ccb9c57188412da765a",
+    "revision": "2f2d88ce3e8378039706",
     "url": "/maxresume/static/css/main.e50bc212.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/maxresume/static/js/2.9d7cd617.chunk.js"
   },
   {
-    "revision": "7ccb9c57188412da765a",
-    "url": "/maxresume/static/js/main.ec1929fe.chunk.js"
+    "revision": "2f2d88ce3e8378039706",
+    "url": "/maxresume/static/js/main.f53b16f6.chunk.js"
   },
   {
     "revision": "d2970fd81ce048a6d67e",
