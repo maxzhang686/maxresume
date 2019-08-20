@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/maxresume/static/css/main.6275bc3b.chunk.css",
-    "main.js": "/maxresume/static/js/main.2b8df5fd.chunk.js",
-    "main.js.map": "/maxresume/static/js/main.2b8df5fd.chunk.js.map",
+    "main.js": "/maxresume/static/js/main.af6881bd.chunk.js",
+    "main.js.map": "/maxresume/static/js/main.af6881bd.chunk.js.map",
     "runtime~main.js": "/maxresume/static/js/runtime~main.1a1732fe.js",
     "runtime~main.js.map": "/maxresume/static/js/runtime~main.1a1732fe.js.map",
-    "static/js/2.f57cdfc3.chunk.js": "/maxresume/static/js/2.f57cdfc3.chunk.js",
-    "static/js/2.f57cdfc3.chunk.js.map": "/maxresume/static/js/2.f57cdfc3.chunk.js.map",
+    "static/js/2.b8ab74df.chunk.js": "/maxresume/static/js/2.b8ab74df.chunk.js",
+    "static/js/2.b8ab74df.chunk.js.map": "/maxresume/static/js/2.b8ab74df.chunk.js.map",
     "index.html": "/maxresume/index.html",
-    "precache-manifest.5c0b4082e0002749d5f82e34cce39d58.js": "/maxresume/precache-manifest.5c0b4082e0002749d5f82e34cce39d58.js",
+    "precache-manifest.5020dade6324f6b28a608b0cf4d545df.js": "/maxresume/precache-manifest.5020dade6324f6b28a608b0cf4d545df.js",
     "service-worker.js": "/maxresume/service-worker.js",
     "static/css/main.6275bc3b.chunk.css.map": "/maxresume/static/css/main.6275bc3b.chunk.css.map"
   }
