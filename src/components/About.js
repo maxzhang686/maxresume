@@ -33,8 +33,8 @@ const About = () =>
             I graduated in 2016 from University of Canberra. I am equipped with essential professional skills to commence my career.
             </p> */}
             <p>
-            I am currently looking for graduate program, junior developer opportunity or a parttime where I can strengthen my skills and begin my career. 
-            I am proficient using <strong>HTML, CSS, React.jS, GIT</strong> and learning <strong>Node.js, Docker, MongoDB</strong>  by myself recently.
+            I am currently looking for junior developer opportunity or a parttime where I can strengthen my skills and begin my career. 
+            I am proficient using <strong>HTML, CSS, React.jS, GIT</strong> and learning <strong>Node.js, Docker, MongoDB</strong>  recently.
             I am equipped with essential professional skills to commence my career
             </p>  
             <p>
