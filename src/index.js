@@ -1,10 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
 
-
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById("root"));
 
 // import React from "react";
 // import ReactDOM from "react-dom";
@@ -18,45 +17,42 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // import App from "./App";
 // import Header from "./components/Header";
 
-
-
-
 // const routing = (
-  // <Router>
-  //   {/* <ul>
-  //     <li>
-  //       <Link to="/">Home</Link>
-  //     </li>
-  //     <li>
-  //       <Link to="/wen">⽂</Link>
-  //     </li>
-  //     <li>
-  //     <Link to="/ti">体</Link>
-  //     </li>
-  //     <li>
-  //     <Link to="/about">About</Link>
-  //     </li>
-  //     <li>
-  //     <Link to="/education">Education</Link>
-  //     </li>
-  //     <li>
-  //     <Link to="/skill">Skill</Link>
-  //     </li>
-  //   </ul> */}
+// <Router>
+//   {/* <ul>
+//     <li>
+//       <Link to="/">Home</Link>
+//     </li>
+//     <li>
+//       <Link to="/wen">⽂</Link>
+//     </li>
+//     <li>
+//     <Link to="/ti">体</Link>
+//     </li>
+//     <li>
+//     <Link to="/about">About</Link>
+//     </li>
+//     <li>
+//     <Link to="/education">Education</Link>
+//     </li>
+//     <li>
+//     <Link to="/skill">Skill</Link>
+//     </li>
+//   </ul> */}
 
-  //   <Header>
+//   <Header>
 
-  //   </Header>
- 
-  //   <div>
-  //     <Route exact={true} path="/" component={App} />
-  //     <Route  path="/about" component={About} />
-  //     <Route path="/education" component={Education} />
-  //     <Route path="/skill" component={Skill} />
-  //     <Route path="/wen" component={Wen} />
-  //     <Route path="/ti" component={Ti} />
-  //     <Route path="/wenti" component={Wenti} />
-  //   </div>
-  // </Router>
+//   </Header>
+
+//   <div>
+//     <Route exact={true} path="/" component={App} />
+//     <Route  path="/about" component={About} />
+//     <Route path="/education" component={Education} />
+//     <Route path="/skill" component={Skill} />
+//     <Route path="/wen" component={Wen} />
+//     <Route path="/ti" component={Ti} />
+//     <Route path="/wenti" component={Wenti} />
+//   </div>
+// </Router>
 // );
 // ReactDOM.render(routing, document.getElementById("root"));

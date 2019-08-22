@@ -18,107 +18,112 @@ header{
 
 } */
 
- .pt-page{
-    max-width: 1032px;
-    margin: 0 auto;
-  } 
-
-  
-  .pt-page h1{
-    /* margin: 50px 0 0; */
-    color: #fff;
-    font-size: 50px;
-
-  }
-
-  .social-links {
-    position: relative;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-  .social-links a {
-    display: inline-block;
-    width: 36px;
-    height: 36px;
-    border-radius: 24px;
-    background-color: #fff;
-    margin: 0 1px;
-    color: #9e9e9e;
-    text-align: center;
-    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
-    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
-  }
-  
-  .social-links a:hover {
-    -webkit-box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.2);
-    box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.2);
-  }
-  
-  .social-links a i {
-    line-height: 36px;
-    font-size: 16px;
-  }
-  
-  #about{
-    background:url("https://res.cloudinary.com/codingsquirrel/image/upload/v1477942751/%D0%91%D0%B5%D0%B7_%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8_yumofp.jpg") no-repeat center center fixed;
-    background-size:cover;  
-    padding-bottom: 50px;
-    padding-top: 104px;
-  }
-  #about .row{
-    margin-right: 15px;
-    margin-left: 15px;
-  }
-  #about .row .photo{
-    max-width: 180px;
-    margin: 0 auto
-  }
-
-  
-  
+.pt-page {
+  max-width: 1032px;
+  margin: 0 auto;
+}
 
 
-  #detail{
-    width:100%;
-    /* text-align:right; */
-    display: block; 
-    margin: 0 auto; 
-    padding: 29px 0 29px 0;
-  }
-  #detail>div{
-    background-color:#fff;
-    
-  }
+.pt-page h1 {
+  /* margin: 50px 0 0; */
+  color: #fff;
+  font-size: 50px;
+
+}
+
+.social-links {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  background-color: #fff;
+  margin: 0 1px;
+  color: #9e9e9e;
+  text-align: center;
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.social-links a:hover {
+  -webkit-box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.2);
+}
+
+.social-links a i {
+  line-height: 36px;
+  font-size: 16px;
+}
+
+#about {
+  background: url("https://res.cloudinary.com/codingsquirrel/image/upload/v1477942751/%D0%91%D0%B5%D0%B7_%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8_yumofp.jpg") no-repeat center center fixed;
+  background-size: cover;
+  padding-bottom: 50px;
+  padding-top: 104px;
+}
+
+#about .row {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+#about .row .photo {
+  max-width: 180px;
+  margin: 0 auto
+}
 
 
-#detail .row{
-    margin-right: 15px;
-    margin-left: 15px;
-  }
 
-  .content{
-    padding-top: 20px;
-    max-width: 1032px;
-    margin: 0 auto;
-  }
 
-  .content .block-title h3 span {
-    color: #ff0000;
-  }
 
-.info{
-    margin: 40px 0 0 20px ;
-  }
+#detail {
+  width: 100%;
+  /* text-align:right; */
+  display: block;
+  margin: 0 auto;
+  padding: 29px 0 29px 0;
+}
+
+#detail>div {
+  background-color: #fff;
+
+}
+
+
+#detail .row {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.content {
+  padding-top: 20px;
+  max-width: 1032px;
+  margin: 0 auto;
+}
+
+.content .block-title h3 span {
+  color: #ff0000;
+}
+
+.info {
+  margin: 40px 0 0 20px;
+}
 
 .info-list {
-    display: inline-block; 
-    margin: 0;
-    
-    list-style: none;
+  display: inline-block;
+  margin: 0;
+
+  list-style: none;
 }
+
 .info-list li {
   margin: 6px 0;
   text-align: left;
@@ -133,7 +138,8 @@ header{
   display: inline-block;
   color: rgb(255, 255, 255);
 }
-.info-list a{
+
+.info-list a {
   color: #ffffff;
 }
 
@@ -141,140 +147,143 @@ header{
 
 
 
-  #education{
-    background-color:lightblue;
-    padding: 96px 0 40px 0;
-    border:20px;
-    /* text-align:center; */
-    background:url(https://res.cloudinary.com/codingsquirrel/image/upload/v1477596145/triangle-background-17-1030x494_sczylc.png) no-repeat fixed;
-    background-size:cover; 
-    
-  }
+#education {
+  background-color: lightblue;
+  padding: 96px 0 40px 0;
+  border: 20px;
+  /* text-align:center; */
+  background: url(https://res.cloudinary.com/codingsquirrel/image/upload/v1477596145/triangle-background-17-1030x494_sczylc.png) no-repeat fixed;
+  background-size: cover;
 
-  .edu-content{
-    padding-top: 20px;
-    max-width: 1032px;
-    margin: 0 auto;
-  }
-
-  .edu-content .edu{
-
-    background-color: rgba(255, 255, 255,0.35)
-  }
-
-
-  .edu-content .work{
-
-    background-color: rgba(255, 255, 255,0.35)
-  }
-  .edu-content h3{
-    text-align: center;
-    padding-top: 15px;    
-  }
-
-
-  .timeline {
-    border-left: 2px solid #e0e0e0;
-    padding: 15px 0;
-    margin: 0 15px;
-  }
-  
-  .timeline-item {
-    position: relative;
-    padding: 15px 20px 10px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    background-color: #fff;
-    border-left: 2px solid #2eca7f;
-    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
-  }
-  
-  .timeline-item:hover {
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
-  }
-  
-  .timeline-item:last-child {
-    margin-bottom: 0;
-  }
-  
-  .timeline-item:before {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    background-color: #fff;
-    border-radius: 10px;
-    width: 12px;
-    height: 12px;
-    top: 20px;
-    left: -29px;
-    border: 2px solid #2eca7f;
-    z-index: 2;
-  }
-  
-  .timeline-item:after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    background-color: #2eca7f;
-    border-radius: 10px;
-    width: 29px;
-    height: 2px;
-    top: 25px;
-    left: -29px;
-    z-index: 1;
-  }
-  
-  .timeline-item .item-title {
-    display: block;
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.2em;
-  }
-  
-  .timeline-item .item-period {
-    display: inline-block;
-    font-size: 12px;
-    line-height: 1.2em;
-    color: #2eca7f;
-    margin-bottom: 8px;
-  }
-  
-  .timeline-item .item-small {
-    display: inline-block;
-    font-size: 12px;
-    line-height: 1.2em;
-    color: #9e9e9e;
-    margin-left: 5px;
-    margin-bottom: 8px;
-    padding-left: 8px;
-    border-left: 1px solid #e0e0e0;
-  }
-
-
-
-
-  
-
-
-
-  
-  #portfolio{
-    text-align:center;
-    background-color:rgba(0, 153, 153, 0.7);
-    padding-bottom:30px;
-    
-  }
-
-  #skill{  
-    background: url(https://res.cloudinary.com/codingsquirrel/image/upload/v1477927345/Blue-polygonal-backgrounds_ijtuux.jpg) no-repeat fixed;
-    background-size:cover;   
-    height:100%;
-    padding:130px;  
-  }
-.skill-content{
-  max-width: 1032px;
-    margin: 0 auto;
 }
+
+.edu-content {
+  padding-top: 20px;
+  max-width: 1032px;
+  margin: 0 auto;
+}
+
+.edu-content .edu {
+
+  background-color: rgba(255, 255, 255, 0.35)
+}
+
+
+.edu-content .work {
+
+  background-color: rgba(255, 255, 255, 0.35)
+}
+
+.edu-content h3 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+
+.timeline {
+  border-left: 2px solid #e0e0e0;
+  padding: 15px 0;
+  margin: 0 15px;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 15px 20px 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-left: 2px solid #2eca7f;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 12px;
+  height: 12px;
+  top: 20px;
+  left: -29px;
+  border: 2px solid #2eca7f;
+  z-index: 2;
+}
+
+.timeline-item:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: #2eca7f;
+  border-radius: 10px;
+  width: 29px;
+  height: 2px;
+  top: 25px;
+  left: -29px;
+  z-index: 1;
+}
+
+.timeline-item .item-title {
+  display: block;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2em;
+}
+
+.timeline-item .item-period {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.2em;
+  color: #2eca7f;
+  margin-bottom: 8px;
+}
+
+.timeline-item .item-small {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.2em;
+  color: #9e9e9e;
+  margin-left: 5px;
+  margin-bottom: 8px;
+  padding-left: 8px;
+  border-left: 1px solid #e0e0e0;
+}
+
+
+
+
+
+
+
+
+
+#portfolio {
+  text-align: center;
+  background-color: rgba(0, 153, 153, 0.7);
+  padding-bottom: 30px;
+
+}
+
+#skill {
+  background: url(https://res.cloudinary.com/codingsquirrel/image/upload/v1477927345/Blue-polygonal-backgrounds_ijtuux.jpg) no-repeat fixed;
+  background-size: cover;
+  height: 100%;
+  padding: 130px;
+}
+
+.skill-content {
+  max-width: 1032px;
+  margin: 0 auto;
+}
+
 .skill-content .block-title h3 span {
   color: #22ff00;
 }
@@ -283,10 +292,10 @@ header{
   margin-bottom: 30px;
 }
 
-.skills-info h4 { 
+.skills-info h4 {
   font-size: 0.8em;
   line-height: 1.1em;
-  position: relative; 
+  position: relative;
   margin: 0 0 5px;
 }
 
@@ -311,30 +320,37 @@ header{
 .skill-percentage.skill-3 {
   width: 30%;
 }
+
 /*Skill 2*/
 .skill-percentage.skill-4 {
   width: 40%;
 }
+
 /*Skill 3*/
 .skill-percentage.skill-5 {
   width: 50%;
 }
+
 /*Skill 4*/
 .skill-percentage.skill-6 {
   width: 60%;
 }
+
 /*Skill 5*/
 .skill-percentage.skill-7 {
   width: 70%;
 }
+
 /*Skill 6*/
 .skill-percentage.skill-8 {
   width: 80%;
 }
+
 /*Skill 7*/
 .skill-percentage.skill-9 {
   width: 90%;
 }
+
 /*Skill 8*/
 .skill-percentage.skill-10 {
   width: 100%;
@@ -343,35 +359,33 @@ header{
 
 
 
-  #contacts{
-    background-color:black;
-    height:200px;
-    color:white;
-    padding:30px;
-    font-size:15px;
-    text-decoration:none;
-  }
+#contacts {
+  background-color: black;
+  height: 200px;
+  color: white;
+  padding: 30px;
+  font-size: 15px;
+  text-decoration: none;
+}
 
 
-  /* .chathome{
+/* .chathome{
     
     padding-top: 80px;
   } */
 
-  /* .board{
+/* .board{
     max-width: 1032px;
     margin: 0 auto;
   } */
 
-  .navlink{
-    color: rgb(0, 0, 0); 
-    text-decoration: none;
-    padding-right: .5rem;
-    padding-left: .5rem;
+.navlink {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding-right: .5rem;
+  padding-left: .5rem;
 }
-.navlink:hover {text-decoration: none;}
 
-
-
-
-
+.navlink:hover {
+  text-decoration: none;
+}

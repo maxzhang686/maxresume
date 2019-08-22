@@ -1,41 +1,36 @@
-import React from 'react';
-import { HashRouter, Route, BrowserRouter as Router } from "react-router-dom";
+import React from "react";
+import { HashRouter, Route } from "react-router-dom";
 import Wen from "./components/Wen";
 import Ti from "./components/Ti";
-import Wenti from './components/Wenti';
+import Wenti from "./components/Wenti";
 import About from "./components/About";
 import Education from "./components/Education";
 import Skill from "./components/Skill";
-import WeatherApp from "./components/Weatherapp"
+import WeatherApp from "./components/Weatherapp";
 
 import Header from "./components/Header";
 
-import './components/main.css';
+import "./components/main.css";
 // import styled from 'styled-components';
-
 
 // import './App.css';
 
 function App() {
   return (
     <HashRouter>
-     <Header>
-    </Header>
-    <div>
-      <Route exact={true} path="/" component={About} />
-      <Route  path="/about" component={About} />
-      <Route path="/education" component={Education} />
-      <Route path="/skill" component={Skill} />
-      <Route path="/weather" component={WeatherApp} />
-      
+      <Header />
+      <div>
+        <Route exact={true} path="/" component={About} />
+        <Route path="/about" component={About} />
+        <Route path="/education" component={Education} />
+        <Route path="/skill" component={Skill} />
+        <Route path="/weather" component={WeatherApp} />
 
-
-
-      <Route path="/wen" component={Wen} />
-      <Route path="/ti" component={Ti} />
-      <Route path="/wenti" component={Wenti} />
-    </div>
-  </HashRouter>
+        <Route path="/wen" component={Wen} />
+        <Route path="/ti" component={Ti} />
+        <Route path="/wenti" component={Wenti} />
+      </div>
+    </HashRouter>
   );
 }
 
@@ -43,7 +38,7 @@ export default App;
 
 // function Home() {
 //   return (
-  
+
 //     <div id="about">
 
 //     <div class="pt-page">
@@ -56,9 +51,9 @@ export default App;
 //         <Righttop>
 //         <h1 class="text-center">
 //           Max Zhang
-//         </h1> 
+//         </h1>
 //         </Righttop>
-//       </Containerfluid> 
+//       </Containerfluid>
 
 //       <Containerfluidbtm>
 //         <Leftbtm>
@@ -70,16 +65,16 @@ export default App;
 //             I graduated in 2016 from University of Canberra. I am equipped with essential professional skills to commence my career.
 //             </p>
 //             <p>
-//             I am currently looking for graduate program, junior developer opportunity or a parttime where I can strengthen my skills and begin my career. 
+//             I am currently looking for graduate program, junior developer opportunity or a parttime where I can strengthen my skills and begin my career.
 //             During the university study and work, I am proficient using <strong>HTML, CSS, React.jS, GIT</strong> and I am learning <strong>Node.js, Docker, MongoDB</strong>  by myself recently.
-//             </p>  
+//             </p>
 //             <p>
 //             I want to emerge as a successful, true professional through my 'Can Do’ attitude, hard work, confidence personality, high motivation & always willing to work.
 //             </p>
 //         </div>
 //         </Leftbtm>
 //         <Rightbtm>
-//           <div class="info"> 
+//           <div class="info">
 //             <ul class="info-list">
 //                   {/* <!-- <li><span class="title">Age</span><span class="value">27</span></li> --> */}
 //                   <li><span class="title">Residence</span><span class="value">Australia Permanent Resident</span></li>
@@ -94,14 +89,11 @@ export default App;
 //       </Containerfluidbtm>
 
 //     </div>
-        
+
 //   </div>
 
 //   );
 // }
-
-
-
 
 // const Containerfluid = styled.div`
 //     width: 100%;
@@ -131,7 +123,7 @@ export default App;
 //     margin-left: 15px;
 //     padding-right: 15px;
 //     padding-left: 15px;
-    
+
 // `;
 
 // const Photo = styled.div`

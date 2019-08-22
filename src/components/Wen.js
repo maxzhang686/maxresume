@@ -1,5 +1,5 @@
-import  React from 'react';
+import React from "react";
 
-const Wen = () => <div>wen</div>
+const Wen = () => <div>wen</div>;
 
 export default Wen;

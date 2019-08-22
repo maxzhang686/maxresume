@@ -33,9 +33,9 @@
 //             <MenuIcon />
 //           </IconButton>
 //           <Typography variant="h6" className={classes.title}>
-            
+
 //          <Bar>
-          
+
 //             <li>
 //             <Link className="navlink" to="/about">About</Link>
 //             </li>
@@ -45,7 +45,6 @@
 //             <li>
 //             <Link className="navlink"  to="/skill">Skill</Link>
 //             </li>
-          
 
 //           </Bar>
 //           </Typography>
@@ -56,10 +55,7 @@
 //   );
 // }
 
-
 // const Bar = styled.ul`
 //     display: flex;
 //     list-style: none;
 // `;
-
-
