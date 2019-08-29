@@ -1,7 +1,7 @@
 import React from "react";
 import "./main.css";
 import styled from "styled-components";
-
+// About/Home page
 const About = () => (
   <div id="about">
     <div class="pt-page">
