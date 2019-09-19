@@ -53,7 +53,7 @@ const Education = () => (
               {/* Experience 4 */}
               <div class="timeline-item">
                 <h4 class="item-title">Web Developer</h4>
-                <span class="item-period">03/2019 - Current</span>
+                <span class="item-period">02/2019 - Current</span>
                 <span class="item-small"> JR Academy (Sydney)</span>
                 <p class="item-description">
                   ReactJS, HTML, CSS, GIT, Node.js, AWS
