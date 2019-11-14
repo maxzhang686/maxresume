@@ -6,24 +6,6 @@ class CityDetail extends React.Component {
     super();
     this.state = {};
   }
-  // componentDidMount(){
-  //     fetch('https://api.apixu.com/v1/current.json?key=dd644d7e780742f8af1111744192707&q=Paris')
-  //     .then(respons => {respons.json()
-  //       // .then(data=> {this.setState({current:data.current,location:data.location});console.log(data)
-  //       .then(data=> {this.setState(data);console.log(data)
-  //       })
-  //     })
-  //     .catch(err => console.log('err'))
-  // }
-
-  //  async componentDidMount(){
-  //    await fetch('https://api.apixu.com/v1/current.json?key=dd644d7e780742f8af1111744192707&q=Paris')
-  //     .then(respons => respons.json())
-  //     .then(data=> this.setState(data))
-  //     // .then(data=>this.setState({current:data.current,location:data.location})
-  //     .catch(err => console.log('err'))
-  //     console.log(this.state.data)
-  // }
   render() {
     return (
       <WeatherLeftPart>
@@ -41,7 +23,7 @@ class CityDetail extends React.Component {
             <h5>{this.props.humidity}%</h5>
           </div>
           <div>
-            <h1>|</h1>
+            <Line></Line>
           </div>
           <div>
             <h5>WIND</h5>
@@ -54,13 +36,6 @@ class CityDetail extends React.Component {
 }
 
 export default CityDetail;
-
-// const Box = styled.div`
-// min-width:100px;
-// width:400px;
-// max-width: 100%;
-
-// `;
 
 const WeatherLeftPart = styled.div`
   height: 100%;
@@ -92,4 +67,10 @@ const OtherContainer = styled.div`
 const WeatherContainer = styled.div`
   margin: 30px auto;
   display: flex;
+`;
+
+const Line = styled.div`
+  float: left;
+  border-left: solid 2px;
+  height: 90px;
 `;

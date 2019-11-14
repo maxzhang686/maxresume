@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/m.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -42,54 +40,52 @@
 
 
 
-    //link to database  
+        //link to database  
         var commentsRef = firebase.database().ref('comments/');
-    //write data to database
-        function writeData(name,email,content){
-            commentsRef.push(
-                {
-                    name:name,
-                    email:email,
-                    content:content
-                }
-            )
+        //write data to database
+        function writeData(name, email, content) {
+            commentsRef.push({
+                name: name,
+                email: email,
+                content: content
+            })
         }
-    //add/sent data to database
-        window.onload = function(){
-            function addComment(){
+        //add/sent data to database
+        window.onload = function () {
+            function addComment() {
                 var name = document.getElementById('name').value
-                var email= document.getElementById('email').value
+                var email = document.getElementById('email').value
                 var content = document.getElementById('content').value
 
-                writeData(name,email,content)
+                writeData(name, email, content)
                 document.getElementById('comment-form').reset();
-            } 
+            }
             //click buttopn sent
-            document.getElementById('button').addEventListener('click',addComment)
-           
+            document.getElementById('button').addEventListener('click', addComment)
+
             //get and show date when database update
-            commentsRef.on('child_added',function(data){
-                addCommentElement(data.val().name,data.val().content)
+            commentsRef.on('child_added', function (data) {
+                addCommentElement(data.val().name, data.val().content)
             })
 
-            function addCommentElement(name,content){
-                
+            function addCommentElement(name, content) {
+
                 var ele = document.getElementById('comments')
                 //可用appendchild
-                ele.innerHTML += '<li class="list-group-item"><samll>'+name+': </samll>'+content+'</li>'
+                ele.innerHTML += '<li class="list-group-item"><samll>' + name + ': </samll>' + content + '</li>'
             }
         }
-
     </script>
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    
-    <link rel="stylesheet" href="css/main.css"> 
 
-  </head>
-  <body>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -105,38 +101,40 @@
 
     <hr>
     <div class="board">
-    <div class="chathome" >
-        
-        <h3 class="text-center">
-            Message Board
-        </h3> 
-    </div>
-    <div class="container">
-        <!-- input data area -->
-        <div class="row">
-            <form action="" class="form-horizontal col-12" id="comment-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input class="form-control" type="text" name="name" id="name" placeholder="Input your name">
-                </div>
-                <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input class="form-control" type="email" name="email" id="email" placeholder="Input your E-mail">
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" id="content"></textarea>
-                </div>
-                <button id="button" type="button" class="btn btn-danger">Send</button>
-            </form>
+        <div class="chathome">
+
+            <h3 class="text-center">
+                Message Board
+            </h3>
         </div>
-        <hr>
-        <!-- comments -->
-        <div class="row">   
-            <ul class="list-group list-group-flush" id="comments">      
-                <li class="list-group-item"></li>
-            </ul>
+        <div class="container">
+            <!-- input data area -->
+            <div class="row">
+                <form action="" class="form-horizontal col-12" id="comment-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Input your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input class="form-control" type="email" name="email" id="email"
+                            placeholder="Input your E-mail">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="content"></textarea>
+                    </div>
+                    <button id="button" type="button" class="btn btn-danger">Send</button>
+                </form>
+            </div>
+            <hr>
+            <!-- comments -->
+            <div class="row">
+                <ul class="list-group list-group-flush" id="comments">
+                    <li class="list-group-item"></li>
+                </ul>
+            </div>
         </div>
     </div>
-  </div>
-  </body>
+</body>
+
 </html>

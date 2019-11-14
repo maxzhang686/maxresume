@@ -1,28 +1,33 @@
 import React from "react";
 import styled from "styled-components";
-import { getDayOfWeek } from "../utilities";
+import moment from "moment";
 
 class WeeksDetail extends React.Component {
   constructor(props) {
     super();
-    console.log("props:" + props.date);
+    //console.log("props:" + props.date);
   }
   render() {
-    const day = getDayOfWeek(this.props.date);
-
     return (
       <Containerweather>
         <div>
-          <h3>{day}</h3>
+          <p>
+            <strong>{moment(this.props.date * 1000).format("DD MMM")}</strong>
+          </p>
+          <p>
+            <strong>{moment(this.props.date * 1000).format("ddd")}</strong>
+          </p>
         </div>
         <div>
-          <img src={this.props.icon} alt="" />
+          <img src={`./img/${this.props.icon}.png`} alt="" />
         </div>
+        <Temp>
+          <p>
+            {this.props.tempmin.toFixed(1)}- {this.props.tempmax.toFixed(1)}°C{" "}
+          </p>
+        </Temp>
         <div>
-          <h5>{this.props.temp} °C </h5>
-        </div>
-        <div>
-          <p>{this.props.sum}</p>
+          <p>{this.props.icon}</p>
         </div>
       </Containerweather>
     );
@@ -35,5 +40,9 @@ const Containerweather = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: center;
+  margin: auto;
+`;
+
+const Temp = styled.div`
+  margin-top: 7px;
 `;

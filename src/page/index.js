@@ -1,123 +1,103 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import WeeksDetail from "./WeeksDetail";
 import CityDetail from "./CityDetail";
 
-const API =
-  "https://api.apixu.com/v1/forecast.json?key=dd644d7e780742f8af1111744192707&q=";
-class Dashboard extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      city: "Canberra",
-      isLoading: false
-    };
-  }
+const proxyurl = "https://cors-anywhere.herokuapp.com/";
 
-  fetchData = async () => {
-    console.log("fetching");
-    fetch(API + this.state.city + "&days=5")
-      .then(respons => {
-        respons.json().then(data => {
-          this.setState({ data });
-          console.log(data);
-        });
-      })
-      .catch(err => console.log("err"));
-  };
+const Dashboard = () => {
+  const [weatherData, setWeatherData] = useState([]);
+  const [cityId, setCityId] = useState("-33.8688,151.2093");
 
-  // fetchData =async() => {
-  //   await fetch(API+this.state.city)
-  //     .then(respons => respons.json())
-  //     .then(data=> this.setState(data))
-  //     // .then(data=>this.setState({current:data.current,location:data.location})
-  //     .catch(err => console.log('err'))
-  //     console.log(this.state.data)
-  //   };
-
-  componentDidMount() {
-    this.fetchData();
-  }
-
-  handleChange = event => {
-    //important！setState is async,must use call back
-    this.setState({ city: event.target.value }, () => {
-      this.fetchData();
+  const saveData = () => {
+    getWeatherData(cityId).then(data => {
+      setWeatherData(data);
+      //console.log(data);
     });
   };
+  const getWeatherData = cityId => {
+    return fetch(
+      `${proxyurl}https://api.darksky.net/forecast/c3ed55bedc8f402d7fcfd7078fb8f5a4/${cityId}?units=si`,
+      {
+        method: "GET"
+      }
+    )
+      .then(response => {
+        return response.json();
+      })
+      .catch(err => console.log(err));
+  };
 
-  render() {
-    const data = this.state.data;
-    // // const forecast = this.state.forecast;
-    // // const current = this.state.current;
-    // // console.log("rendering" + forecast);
-    // console.log("rendering" + data);
+  const handleChange = name => event => {
+    setCityId(event.target.value);
+    console.log(cityId);
+  };
 
-    return (
-      <Container>
-        <Containerweather>
-          <Left>
-            {data && data.current && (
+  useEffect(() => saveData(), [cityId]);
+
+  return (
+    <Container>
+      <Containerweather>
+        <Left>
+          {weatherData && weatherData.currently && (
+            <div>
               <CityDetail
-                temp={data.current.temp_c}
-                humidity={data.current.humidity}
-                wind={data.current.wind_mph}
-                condition={data.current.condition.text}
+                data1={weatherData}
+                temp={weatherData.currently.temperature}
+                humidity={weatherData.currently.humidity}
+                wind={weatherData.currently.windSpeed}
+                condition={weatherData.currently.summary}
               />
-            )}
-          </Left>
-
-          <Right>
-            <div>
-              {" "}
-              <strong>
-                <h1> {this.state.city}</h1>
-              </strong>
             </div>
-            <div>
-              <select
-                id="city"
-                name="city"
-                value={this.state.city}
-                onChange={this.handleChange}
-              >
-                <option value="Canberra">Canberra</option>
-                <option value="Sydney">Sydney</option>
-                <option value="Tokyo">Tokyo</option>
-                <option value="Beijing">Beijing</option>
-              </select>
-            </div>
-          </Right>
-        </Containerweather>
+          )}
+        </Left>
 
-        <Buttompart>
-          {data &&
-            data.forecast.forecastday.map((day1, id) => {
+        <Right>
+          <div>
+            {" "}
+            <strong>
+              <h1>
+                <strong>{weatherData.timezone}</strong>
+              </h1>
+            </strong>
+          </div>
+          <div>
+            <select
+              id="city"
+              name="city"
+              value={cityId}
+              onChange={handleChange()}
+            >
+              <option value="-33.8688,151.2093">Sydney</option>
+              <option value="35.6762,139.6503">Tokyo</option>
+              <option value="48.8566,2.3522">Paris</option>
+              <option value="39.9042,116.4074">Shanghai</option>
+            </select>
+          </div>
+        </Right>
+      </Containerweather>
+
+      <Buttompart>
+        {weatherData &&
+          weatherData.daily &&
+          weatherData.daily.data.map((day, i) => {
+            if (i !== 0) {
               return (
                 <WeeksDetail
-                  key={id}
-                  date={day1.date}
-                  icon={day1.day.condition.icon}
-                  temp={day1.day.avgtemp_c}
-                  sum={day1.day.condition.text}
-                />
+                  key={i}
+                  date={day.time}
+                  icon={day.icon}
+                  tempmin={day.temperatureLow}
+                  tempmax={day.temperatureHigh}
+                  sum={day.summary}
+                ></WeeksDetail>
               );
-            })}
-          {/* way2
-                    {data&&data.forecast.forecastday.map((day, id) => (
-                      <WeeksDetail
-                        key={id}
-                        date={day.date}
-                        icon={day.day.condition.icon}
-                        temp={day.day.avgtemp_c}
-                        sum={day.day.condition.text}
-                      />
-                    ))} */}
-        </Buttompart>
-      </Container>
-    );
-  }
-}
+            }
+          })}
+      </Buttompart>
+    </Container>
+  );
+};
 
 export default Dashboard;
 
@@ -143,13 +123,11 @@ const Containerweather = styled.div`
   align-items: center;
   background-color: #ffffffbf;
   margin: 100px 50px 0 50px;
+  min-width: 767px;
 `;
 
 const Left = styled.div`
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
 `;
 
 const Right = styled.div`
@@ -163,4 +141,5 @@ const Buttompart = styled.div`
   background-color: #ffffffbf;
   margin: 1px 50px 50px 50px;
   justify-content: center;
+  min-width: 767px;
 `;
