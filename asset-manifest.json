@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/maxresume/static/css/main.ea7b792d.chunk.css",
-    "main.js": "/maxresume/static/js/main.d5b798c1.chunk.js",
-    "main.js.map": "/maxresume/static/js/main.d5b798c1.chunk.js.map",
+    "main.js": "/maxresume/static/js/main.08561892.chunk.js",
+    "main.js.map": "/maxresume/static/js/main.08561892.chunk.js.map",
     "runtime~main.js": "/maxresume/static/js/runtime~main.1a1732fe.js",
     "runtime~main.js.map": "/maxresume/static/js/runtime~main.1a1732fe.js.map",
     "static/js/2.654db48b.chunk.js": "/maxresume/static/js/2.654db48b.chunk.js",
     "static/js/2.654db48b.chunk.js.map": "/maxresume/static/js/2.654db48b.chunk.js.map",
     "index.html": "/maxresume/index.html",
-    "precache-manifest.b24098e8a45e14a10c981a05346af72b.js": "/maxresume/precache-manifest.b24098e8a45e14a10c981a05346af72b.js",
+    "precache-manifest.3345f1601e333a8756bb2ff1a8f9f677.js": "/maxresume/precache-manifest.3345f1601e333a8756bb2ff1a8f9f677.js",
     "service-worker.js": "/maxresume/service-worker.js",
     "static/css/main.ea7b792d.chunk.css.map": "/maxresume/static/css/main.ea7b792d.chunk.css.map"
   }
